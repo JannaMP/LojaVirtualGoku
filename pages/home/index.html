@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="/logo_icongoku.png">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Home</title>
 </head>
 
 
 <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <img src="/assets/img/logo_icongoku.png" width=30px height="30px" alt="Logo Goku shop">
+          <a class="navbar-brand" href="/index.html">Goku Shop</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/paginas/sobrenos.html">Sobre nós<span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/paginas/carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/paginas/login.html">Login</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
     <main>
         <section class="produtos">
 
@@ -42,6 +69,32 @@
 
         </section>
     </main>
-    
+       <footer>
+      <div class="row">
+        <div class="col">
+          <h2>Goku Shop</h2>
+          <br>
+          <p>A loja especializada em produtos voltados aos fãs de Dragon Ball e admiradores da cultura Geek</p><p>Entre em contato conosco:<h5>+55 11 90000-0000</h5></p>
+        </div>
+        <div class="col">
+          <h3 class="links">Links</h3>
+          <br>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/paginas/sobrenos.html">Sobre nós</a></li>
+            <li><a href="/paginas/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Explore </h3>
+          <br>
+            <img class="social-icons" src="/assets/img/facebook_1384005.png" alt="facebook_icon">
+            <img class="social-icons" src="/assets/img/instagram_1384015.png" alt="instagram_icon">
+            <img class="social-icons" src="/assets/img/twitter_5969020.png" alt="twitter_icon">
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Goku Shop - &copy;2024</p>
+    </footer>
 </body>
 </html>
