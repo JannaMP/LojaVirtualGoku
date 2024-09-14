@@ -1,1 +1,49 @@
-
+.navbar-brand{
+    margin:10px;
+}
+.nav-item{
+    margin-bottom: 0px;
+}
+footer{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background-color: rgb(150, 150, 150);
+    color:black;
+    padding-top:50px;
+    padding-left: 80px;
+    padding-right:80px ;
+    border-top-left-radius:25px ;
+    border-top-right-radius:25px ;
+}
+row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.col ul, li {
+    list-style:none;
+    margin-bottom:10px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    transition:0.2s;
+}
+.social-icons{
+    margin-right: 10px;
+    width:30px;
+}
+.links{
+    margin-left:38px;
+}
+hr{
+    width:99%;
+    border:0;
+    border-bottom: 1px rgb(0, 0, 0);
+    margin: 10px auto;
+}
+.copyright{
+    text-align:center;
+}
