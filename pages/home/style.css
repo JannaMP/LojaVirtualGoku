@@ -1,0 +1,50 @@
+.navbar-brand{
+    margin:10px;
+}
+.nav-item{
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+footer{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background-color: rgb(150, 150, 150);
+    color:black;
+    padding-top:30px;
+    padding-left: 80px;
+    padding-right:80px ;
+    border-top-left-radius:25px ;
+    border-top-right-radius:25px ;
+}
+row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.col ul, li, a {
+    list-style:none;
+    margin-bottom:10px;
+    color:rgb(0, 0, 0);
+    text-decoration:none
+}
+
+.social-icons{
+    margin-right: 10px;
+    width:33px;
+}
+.links{
+    margin-left:38px;
+}
+hr{
+    width:99%;
+    border:0;
+    border-bottom: 1px solid #313131;
+    margin:10px auto;
+}
+.copyright{
+    text-align:center;
+}
