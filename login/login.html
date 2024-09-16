@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: orange;
+        }
+        .login{
+            background-color: orangered;
+            position:absolute ;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-around;
+        }
+        input{
+            padding: 20px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            width: 300px;
+            border-radius: 25px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            transform: translate(0%, 40%);
+            text-transform: uppercase;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 4px;
+            cursor: pointer;
+
+        }
+        .textfield{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .Email{
+            width: 100%;
+            text-transform: uppercase;
+            right: 10px;
+            color: blue;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            padding: 5px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }        
+
+        .Senha{
+            width: 100%;
+            text-transform: uppercase;
+            right: 10px;
+            color: blue;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            padding: 5px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        
+
+        }
+        .goku{
+            width: 550px;
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="usuarios">
+
+        
+    </div>
+    <script>
+        let divUsuarios = document.querySelector("#usuarios")
+
+        fetch("dados.json").then((response) => {
+            response.json().then((usuarios) => {
+                console.log(usuarios);
+            })
+        })
+    </script>
+    <form class="dropdown-menu p-4">
+        <div class="login">
+          <div class="Email"><label for="email">Endereço de email</label></div>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@gmail.com">
+          <div class="Senha"><label for="exampleDropdownFormPassword2">Senha</label></div>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+
+        </div>
+        <img src="/goku.login.png" class="goku">
+      </form>
+
+
+</body>
+</html>
