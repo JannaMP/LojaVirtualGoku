@@ -1,0 +1,55 @@
+.navbar {
+    background-color: blue;
+    
+}
+
+.titulo_principal {
+    color:  #072083;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#desc {
+    display: flex;
+    justify-content: center;
+    text-align-last: center;
+}
+
+.row {
+    background-color: #f85b1a;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+
+}
+
+.capa-anime {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#goku {
+    padding: 5% 20%;
+}
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    justify-content: space-around;
+    gap: 12%;
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#akira {
+    padding: 5% 30%;
+}
+
