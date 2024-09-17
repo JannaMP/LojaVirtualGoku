@@ -15,7 +15,7 @@ function login() {
     let senha = document.querySelector('#password3').value;
         for (let i = 0; i < usuarios.length; i++) {
         if (log === usuarios[i].email && senha === usuarios[i].password) {
-            window.location.href = "index.html";
+            window.location.href = "/index.html";
             usuarioEncontrado = true; // Usuário encontrado, não precisa continuar o loop
             break; // Sai do loop
         }
