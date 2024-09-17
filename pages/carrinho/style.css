@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+   text-align: center;
+   font-size: 70px;
+}
+
+.carrinho{
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.card-deck-carrinho{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_carrinho {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.card-tex{
+    position: center;
+}
+
+.card_carrinho img{
+    width: 20%;
+    height: 10%;
+}
+
+.btn_finalizarcompra{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 50%;
+    padding-top: 20px;
+}
+
