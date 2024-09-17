@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+}
+.login{
+    background-color: orangered;
+    position:absolute ;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+}
+input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 300px;
+    border-radius: 25px;
+}
+button{
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    transform: translate(0%, 40%);
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    cursor: pointer;
+
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Email{
+    width: 100%;
+    text-transform: uppercase;
+    right: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}        
+
+.Senha{
+    width: 100%;
+    text-transform: uppercase;
+    right: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+
+}
+.goku{
+    width: 550px;
+    background-color: red;
+    border-radius: 1000px;
+
+}
