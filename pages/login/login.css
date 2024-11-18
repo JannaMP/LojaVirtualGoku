@@ -12,8 +12,12 @@ body{
     border-radius: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: space-around;
+    height: 400px;
+}
+.login label{
+    color: azure;  
 }
 input{
     padding: 20px;
@@ -35,6 +39,7 @@ button{
     color: rgb(0, 0, 0);
     letter-spacing: 4px;
     cursor: pointer;
+    color: azure;
 
 }
 .textfield{
@@ -75,4 +80,10 @@ button{
     background-color: red;
     border-radius: 1000px;
 
+}
+
+a{
+    color: azure;
+    padding: 10px;
+    align-items: center;
 }
