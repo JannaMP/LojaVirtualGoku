@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/pages/login/login.css">
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="/pages/login/login.css"> 
+    <script src="/pages/login/login.js"></script>
 </head>
 <body onload="local()">
 
     <form class="dropdown-menu p-4">
         <div class="login">
           <div class="Email"><label for="email">Endereço de email</label></div>
-          <input type="email" class="form-control" id="email3" placeholder="email@gmail.com">
+          <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
           <div class="Senha"><label for="exampleDropdownFormPassword2">Senha</label></div>
-          <input type="password" class="form-control" id="password3" placeholder="Senha">
-          <button type="submit" class="btn btn-primary" onclick="login()">Entrar</button>
+          <input type="password" class="form-control" id="password" placeholder="Senha">
+          <button type="submit" class="btn btn-primary" onclick="doLogin(event)">Entrar</button>
 
             <a href="/pages/cadastro/cadastro.html">Não tenho cadastro</a>
 

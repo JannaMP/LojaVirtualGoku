@@ -1,161 +1,65 @@
 function local(){
-    let dados = [ { "id":1,"nome":"Alice","senha":123,"numero":11, "email": "alice123@gmail.com"}, 
-                  { "id":2,"nome":"Gustavo","senha":777,"numero":11, "email": "gustavo123@gmail.com"}, 
-                  { "id":3,"nome":"Janaina","senha":333, "numero":11, "email": "janaina@gmail.com"} 
-                ]       
-    let n = JSON.stringify(dados);
-    localStorage.setItem("tds", n);   
-    return dados 
+
+  if (localStorage.getItem('usersHere') === null) {
+      const ds = [ 
+          { id: 1, login: "Alice", password: "1234", email: "alice@gmail.com"},//[0]
+          { id: 2, login: "Gustavo", password: "12345@", email: "gustavo@gmail.com"},//[1]
+          { id: 3, login: "Janaina", password: "123456@", email: "janaina@gmail.com"},//[2]
+          { id: 4, login: "snoopy", password: "1950", email: "snoopy@gmail.com"}
+       ]
+      let n = JSON.stringify(ds);
+      localStorage.setItem("usersHere", n);   
+      return ds  
+  } 
+
+}
+
+function doLogin(event){
+  event.preventDefault();
+
+  const usuarios = JSON.parse(localStorage.getItem("user"))
   
+  let log = document.querySelector("#email").value
+  let senha = document.querySelector('#password').value
+
+      for(let i = 0; i < usuarios.length; i++){
+          if((log == usuarios[i].email) && senha == usuarios[i].password){
+              let n = JSON.stringify(usuarios[i]);
+              sessionStorage.setItem("user", n)
+              window.location.href =  window.location.href.replace("/pages/login/login.html","") + "/index.html"
+              break
+          }
+}       
 }
 
-function logon(){  
-  const dados = JSON.parse(localStorage.getItem("tds"))
-  let login = document.querySelector("#email").value
-  let senha = document.querySelector("#senha").value
+function cadastrar(event) {
+  event.preventDefault();
 
-for (let i = 0; dados.length > i; i++) {
-  if (dados[i] == null) {
-     alert("Verificando")
-    //  alert("encontrou: " + dados[i].nome + ":" + i)
-  } else {
-    if (login == dados[i].email && senha == dados[i].senha) {
-      console.log("conectado")
-      let n = JSON.stringify(dados[i]);
-      sessionStorage.setItem("user", n)
-      window.location.href= "index.html"
-      break
-      
-    }
-  }
- }
-} 
-//SessionStore getItem
-function logado(){
-  let dados = JSON.parse(sessionStorage.getItem("user"))
+  var usuarios = JSON.parse(localStorage.getItem("usersHere"))
+  let nome = document.querySelector("#nome1").value
+  let senha = document.querySelector("#password1").value
+  let email = document.querySelector("#email1").value
 
-  if (dados !== null){
-    document.getElementById("nome").innerHTML = "Bem vindo " + dados.nome + " !"
+  if (nome !== '' && senha !== '' && email !== ''){
+      let user = { id: Date.now(), login: nome, password: senha, email:email}
+      usuarios.push(user)
+      localStorage.setItem("user", JSON.stringify(usuarios))
+      alert('Conta Registrada!')
+      window.location.href =  window.location.href.replace("/pages/login/login.html")
+  
   }
 
 }
-//SessionStore remove Item
-function logaout(){
+
+function logout(){
   sessionStorage.removeItem("user")
-  let url = "index.html"
-  window.open(url)
-  window.close()    
-}
-
-
-
-function adicionar() {
-  var ClienteArray = JSON.parse(localStorage.getItem("tds"))
-  let nome = document.querySelector("#nome").value
-  let email = document.querySelector("#email").value
-  let senha = document.querySelector("#senha").value
-  let numero = document.querySelector("#numero").value
-  let user = { id: Date.now(), nome: nome, email: email, senha: senha, numero: numero}
-  ClienteArray.push(user)
-  localStorage.setItem("tds", JSON.stringify(ClienteArray))
-  sessionStorage.setItem("user", n)
-  alert("Registro adicionado.")
-  document.querySelector("#email").value = ""
-  document.querySelector("#senha").value = ""
-  document.querySelector("#nome").value = ""
-  document.querySelector("#numero").value = ""
-  
+  window.location.href =  window.location.href.replace("/pages/perfil-paciente.html","")
 
 }
 
- function buscar() {
-   var dados = JSON.parse(localStorage.getItem("tds"))
-   let email = document.querySelector("#email").value
+function setUserType(val){
+  n = JSON.stringify(val);
+  sessionStorage.setItem("userType", n)
 
-   for (let i = 0; dados.length > i; i++) {
-     if (dados[i] == null && dados[i] != email) {
-       alert("Verificando")
-     } else { 
-       if (email == dados[i].nome) {
-       //alert("encontrou: " + dados[i].nome + ":" + i)
-       document.querySelector("#id").value = dados[i].id
-       document.querySelector("#email").value = dados[i].email
-       document.querySelector("#senha").value = dados[i].senha    
-       break
-     } 
-   }
- }
 }
-
- function tabela(){
-  var dados = JSON.parse(localStorage.getItem("tds"))
-  for (let i = 0; dados.length > i; i++) {
-  document.querySelector("#cod").innerHTML = dados[i].id
-  document.querySelector("#usuario").innerHTML = dados[i].nome
-  document.querySelector("#pass").innerHTML = dados[i].senha  
-  } 
- }
-     
-function atualizar() {
-  var dados = JSON.parse(localStorage.getItem("tds"))
-  localStorage.removeItem("tds")
-  let id = document.querySelector("#id").value
-  let email = document.querySelector("#email").value
-  let senha = document.querySelector("#senha").value  
-
-  for (let i = 0; dados.length > i; i++) {
-  if (id == dados[i].id){
-    let user = { id: id, nome: email, senha: senha }
-    dados[i] = user
-    localStorage.setItem("tds", JSON.stringify(dados))
-    alert("Atualizado!")
-    break
-  } 
- }
-}
-
- function apagarItemVetor() {
-   let id = parseInt(document.querySelector("#id").value)
-   let email = document.querySelector("#email").value
-   var dados = JSON.parse(localStorage.getItem("tds"))
-   localStorage.removeItem("tds")
-   
-  for (let i = 0; dados.length > i; i++) {
-     if (dados[i] == null) {
-        alert("Verificando")       
-     } else { 
-       if (id == dados[i].id && email == dados[i].nome) {
-       delete dados[i]
-       break;
-     } 
-    }
-   }   
-   localStorage.setItem("tds", JSON.stringify(dados))
- }
-
-function apagaTudo(){
-  localStorage.removeItem("tds")
-}
-
-function limpar(){
-  document.querySelector("#id").value = ""
-  document.querySelector("#email").value = ""
-  document.querySelector("#senha").value = "" 
-}
-
-/*
-function removerItem() {
-  var meuJSON = JSON.parse(localStorage.getItem("tds"))
-  let valor = parseInt(document.querySelector("nome").value)
-
-  chave = "nome"
-
-  meuJSON = meuJSON.filter(function (jsonObject) {
-    return jsonObject[chave] != valor
-  });
-  return meuJSON
-}
-*/
-
-
 
