@@ -12,7 +12,7 @@
    
 </div>
 
-<p><b> Link da plataforma:</b></p>
+<p><b> Link da plataforma:https://loja-virtual-goku.vercel.app/</b></p>
 
 ## Página de login
 
