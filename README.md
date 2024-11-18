@@ -14,6 +14,10 @@
 
 <p><b> Link da plataforma:https://loja-virtual-goku.vercel.app/</b></p>
 
+<strong> Login: snoopy@gmail.com 
+Sennha: 1950
+</strong>
+
 ## Página de login
 
 ![Login](https://github.com/user-attachments/assets/ab2bc839-52ed-4ee3-a698-a2cd9b365da5)
