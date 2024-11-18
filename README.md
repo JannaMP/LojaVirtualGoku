@@ -8,7 +8,7 @@
 <br>
 <div align="center">
   
-   [Página de login](página-de-login) • [Home](#home) • [Sobre nós](#sobre-nós) • [Carrinho](#carrinho) • [Navegação na página](#navegação-na-página) 
+   [Página de login](página-de-login) • [Home](#home) • [Sobre nós](#sobre-nós) • [Carrinho](#carrinho)
    
 </div>
 
