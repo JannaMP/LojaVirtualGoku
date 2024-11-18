@@ -58,12 +58,12 @@ function adicionar() {
   let user = { id: Date.now(), nome: nome, email: email, senha: senha, numero: numero}
   ClienteArray.push(user)
   localStorage.setItem("tds", JSON.stringify(ClienteArray))
+  sessionStorage.setItem("user", n)
   alert("Registro adicionado.")
   document.querySelector("#email").value = ""
   document.querySelector("#senha").value = ""
   document.querySelector("#nome").value = ""
   document.querySelector("#numero").value = ""
-  window.location.href= "login.html"
   
 
 }
