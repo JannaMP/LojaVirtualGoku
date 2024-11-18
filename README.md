@@ -23,8 +23,12 @@ Senha: 1950
 
 ![Login](https://github.com/user-attachments/assets/50d64992-b26b-4095-aa7a-90196d7ba71e)
 
+## Cadastro
+
+![cadastro](https://github.com/user-attachments/assets/76b4b217-20bc-46c7-a6f5-4fcba1fb0116)
+
 ## Home 
-![home](https://github.com/user-attachments/assets/089d9945-932a-4c9e-8032-4065e6de2262)
+![home](https://github.com/user-attachments/assets/1581e4fa-98b4-4959-994a-cc2d57066807)
 
 ## Sobre nós 
 
