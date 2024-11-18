@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/logo_icongoku.png">
-    <link rel="stylesheet" href="/pages/carrinho/style.css">
+    <link rel="stylesheet" href="carrinho.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Carrinho</title>
+    <script src="/pages/carrinho/app.js"></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -36,41 +38,57 @@
     </nav>
   </header>
 
-    <main>
-        <section class="carrinho">
-            <h1>Finalize suas compras</h1>
+ 
+    <h1 class="titulo">Carrinho de Compras</h1>
 
-            <div class="card-deck-carrinho">
-                <div class="card_carrinho">
-                  <img class="card-img-top" src="/assets/img/camisa1_goku.webp" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h5 class="card-title">R$30,00</h5>
-                    <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
-                  </div>
-                </div>
-                <div class="card_carrinho">
-                  <img class="card-img-top" src="/assets/img/camisa2_goku.png" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h5 class="card-title">R$30,00</h5>
-                    <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
-                  </div>
-                </div>
-                <div class="card_carrinho">
-                  <img class="card-img-top" src="/assets/img/camisa3_goku.png" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h5 class="card-title">R$30,00</h5>
-                    <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>                  </div>
-                </div>
-             </div>
+    <!-- Área do Carrinho -->
+    <div id="produtosCarrinho" class="carrinho-container">
+        <!-- Produtos serão carregados dinamicamente -->
+    </div>
 
-             <div class="btn_finalizarcompra">
-              <button type="button" class="btn btn-secondary btn-lg">Finalizar Compra</button>
-             </div>
-    
-        </section>
-        
-    </main>
+    <!-- Resumo do Pedido -->
+    <div class="btn-cards">
+      <div class="resumo">
+          <p>Total: R$ <span id="total">0.00</span></p>
+          <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+      <div>
+        <img style="width:50px; margin-bottom:10px;" src="/assets/img/elo_payment_method.png" alt="elo card">
+        <img style="width:50px; margin-bottom:10px;;" src="/assets/img/icons8-mastercard-96.png" alt="mastercard">
+        <img style="width:50px; margin-bottom:10px;" src="/assets/img/icons8-visa-96.png" alt="visa card">
+      </div>
+    </div>
 
-    
+    <footer>
+      <div class="row">
+        <div class="col">
+          <h2>Goku Shop</h2>
+          <br>
+          <p>A loja especializada em produtos voltados aos fãs de Dragon Ball e admiradores da cultura Geek</p><p>Entre em contato conosco:<h5>+55 11 90000-0000</h5></p>
+        </div>
+        <div class="col">
+          <h3 class="links">Links</h3>
+          <br>
+          <ul>
+            <li><a href="/pages/home/index.html">Home</a></li>
+            <li><a href="/pages/sobrenos.html">Sobre nós</a></li>
+            <li><a href="/pages/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Explore </h3>
+          <br>
+            <img class="social-icons" src="/assets/img/facebook_1384005.png" alt="facebook_icon">
+            <img class="social-icons" src="/assets/img/instagram_1384015.png" alt="instagram_icon">
+            <img class="social-icons" src="/assets/img/twitter_5969020.png" alt="twitter_icon">
+            <p class="copyright">Goku Shop - &copy;2024</p>
+        </div>
+      </div>
+      
+    </footer>
+    <script>
+        // Atualiza o carrinho ao carregar a página
+        atualizarCarrinho();
+    </script>
 </body>
 </html>

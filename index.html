@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Home</title>
+    <script src="/pages/carrinho/app.js"></script>
 </head>
 
 
@@ -37,32 +38,39 @@
         </div>
       </nav>
     </header>
+
     <main>
         <section class="produtos">
 
             <div class="card-deck">
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/camisa1_goku.webp" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$30,00</h5>
                     <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 1', 30)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/camisa2_goku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$30,00</h5>
                     <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 2', 30)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/camisa3_goku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$30,00</h5>
                     <p class="card-text">Liberte seu guerreiro interior com nossas camisetas Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 3', 30)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
               </div>
@@ -74,22 +82,27 @@
                     <h5 class="card-title">R$150,00</h5>
                     <p class="card-text">Colecione seus personagens de anime favoritos em versão Funko Pop! Essas miniaturas super detalhadas são perfeitas para decorar sua estante ou para presentear aquele amigo fã de anime.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 4', 150)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/caneca_goku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$30,00</h5>
                     <p class="card-text">Comece seu dia com uma dose de anime! Nossas canecas personalizadas são ideais para tomar seu café ou chá favorito e relembrar suas aventuras favoritas.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 5', 30)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/quadro_goku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$100,00</h5>
                     <p class="card-text">Leve seus personagens favoritos para dentro do seu lar com nossos quadros , feitos com materias de alta qualidade. Compactos e estilosos, eles são o acessório perfeito para dar um toque geek à sua casa. .</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 6', 100)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
               </div>
@@ -101,28 +114,34 @@
                     <h5 class="card-title">R$50,00</h5>
                     <p class="card-text">Liberte seu guerreiro interior com nosso moletom Goku! Perfeita para os fãs de Dragon Ball Z, cada camiseta traz a energia e a determinação do icônico personagem. Feita com materiais de alta qualidade, garantindo conforto e durabilidade.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 7', 50)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/copogoku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$60,00</h5>
                     <p class="card-text">Refresque-se com estilo! Nossos copos de anime são perfeitos para levar para qualquer lugar. Ideal para usar no trabalho, na faculdade ou em eventos temáticos.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 8', 60)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="/assets/img/meiasgoku.png" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h5 class="card-title">R$25,00</h5>
                     <p class="card-text">Seja o herói da sua própria história com as meias do Goku! Com designs vibrantes e divertidos, nossas meias são a escolha perfeita para quem busca um acessório único e original.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <button class="btn" onclick="adicionarProduto('Produto 9', 25)">Adicionar ao Carrinho</button>
                   </div>
                 </div>
               </div>
 
         </section>
     </main>
+
        <footer>
       <div class="row">
         <div class="col">
