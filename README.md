@@ -21,7 +21,7 @@ Senha: 1950
 
 ## Página de login
 
-![Login](https://github.com/user-attachments/![login](https://github.com/user-attachments/assets/50d64992-b26b-4095-aa7a-90196d7ba71e)
+![Login](https://github.com/user-attachments/assets/50d64992-b26b-4095-aa7a-90196d7ba71e)
 
 ## Home 
 ![home](https://github.com/user-attachments/assets/089d9945-932a-4c9e-8032-4065e6de2262)
