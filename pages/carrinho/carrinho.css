@@ -100,3 +100,6 @@ hr{
 .copyright{
     text-align:center;
 }
+.nav-link:hover{
+    cursor: pointer;
+}

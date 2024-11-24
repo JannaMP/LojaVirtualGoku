@@ -48,3 +48,6 @@
     padding: 5% 30%;
 }
 
+.nav-link:hover{
+    cursor: pointer;
+}
