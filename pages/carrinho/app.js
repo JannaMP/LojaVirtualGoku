@@ -51,7 +51,8 @@ function atualizarQuantidade(nome, quantidade) {
 
 // Finaliza a compra
 function finalizarCompra() {
-    alert("Compra finalizada com sucesso! Obrigado por comprar conosco.");
+    const usuarios = JSON.parse(sessionStorage.getItem("usersHere"))
+    alert(`${usuarios.login} efetuou a compra com sucesso!!`)
     localStorage.removeItem('carrinho');
     atualizarCarrinho();
 }
